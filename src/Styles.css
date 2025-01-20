@@ -6,6 +6,7 @@
         width:100%;
         height:100vh;
     }
+    a{ text-decoration: none;}
  
 #nav{
     box-shadow:1px 1px 10px rgb(194, 194, 243);
