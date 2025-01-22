@@ -1,12 +1,21 @@
-gsap.to("#page1 h1",{
-    transform:"tranlateX(-150%)",
+gsap.from("#page1 #box",{
+    y:-100,
+    opacity:0,
+    duration:1,
+    x:-100,
+    delay:1,
+    repeat:-1,
+    scale:0.3,
+    yoyo:0.1
+   })
+gsap.to("#page3 #box",{
+    opacity:0,
     scrollTrigger:{
-    trigger:"#page1",
-    scroll:"body",
-    markers:true,
-    start:"top 0%",
-    end:"top -100%",
-    scrub:2,
-    pin:true,
+        scroll:"#page3 #box",
+        trigger:"body",
+        start:"top 100%",
+        scrub:2
+
     }
+
 })

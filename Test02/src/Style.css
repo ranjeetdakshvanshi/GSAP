@@ -1,47 +1,45 @@
 *{
     padding:0px;
     margin:0px;
+
 }
 body{
     width:100%;
-    height: 100vh;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+    height:100%;
+
 }
 #page1{
-    width: 100%;
-    height:100%;
-    background-image: url("https://scitechdaily.com/images/AI-Materials-Science-Concept.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color:white;
-   }
-#page2{
-    display:flex;
-    align-items: center;
-    justify-content:space-around;
-    width: 100%;
-    height: 100%;
+    width:100%;
+    height:100vh;
     display:flex;
     align-items: center;
     justify-content: center;
-   
+}
+#page2{
+    width:100%;
+    height:100vh;
+    background-color: black;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden;
 }
 #page3{
-    width: 100%;
-    height:100%;}
-img{
-    width:400px;
-    height:400px;
-    margin:0px auto;
-        
-    
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
-img:hover{
-    box-shadow: 1px 1px 10px 5px rgb(47, 0, 255);
-    border-radius:2px;
-   
+#box{
+    width:300px;
+    height:300px;
+    background-color:blue;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
-#page1 h1{
-  font-size:40vw;
-  text-transform: uppercase;}
+#page2 h1{
+    font-size:50vw;
+   }
