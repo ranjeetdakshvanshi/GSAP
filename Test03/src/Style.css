@@ -7,39 +7,4 @@ body{
     width:100%;
     height:100%;
    }
-#page1{
-    width:100%;
-    height:100vh;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-#page2{
-    width:100%;
-    height:100vh;
-    overflow: hidden;
-    display:flex;
-    align-items: center;
-      justify-content: center;
-    background-color: black;
-    color:white;    
-    }
-#page3{
-    width:100%;
-    height:100vh;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-#box{
-    width:300px;
-    height:300px;
-    background-color:blue;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-h1{
-  
-   font-size:35vh;
-   }
+
