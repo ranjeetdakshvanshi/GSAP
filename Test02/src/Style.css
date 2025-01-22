@@ -20,8 +20,9 @@ body{
     overflow: hidden;
     display:flex;
     align-items: center;
-    justify-content: center;
-      
+      justify-content: center;
+    background-color: black;
+    color:white;    
     }
 #page3{
     width:100%;
