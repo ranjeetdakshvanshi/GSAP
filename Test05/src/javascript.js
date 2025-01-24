@@ -1,26 +1,23 @@
-var main=document.querySelector("#main");
-var cursor=document.querySelector("#cursor");
-var imgDiv=document.querySelector("#image")
-main.addEventListener("mousemove", function(dets){
-                  gsap.to(cursor,{
-                   x:dets.x,
-                   y:dets.y,
-                                    
-            })
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
 
+var menu=document.querySelector("#nav i")
+var scross=document.querySelector("#toggle i")
+var tl=gsap.timeline()
+tl.to("#toggle",{
+  right:0,
+  duration:0.3,
 })
-imgDiv.addEventListener("mouseenter", function(){
-  cursor.innerHTML="View More"
-    gsap.to(cursor,{
-     scale:6 
-   
+tl.from("#toggle h4",{
+  x:150,
+  duration:0.3,
+  opacity:0,
+ })
+ tl.from("#toggle i",{
+      opacity:0,
+ })
+ tl.pause()
+menu.addEventListener("click",function(){
+  tl.play()
 })
-})
-imgDiv.addEventListener("mouseleave", function(){
-  cursor.innerHTML=""
-  gsap.to(cursor,{
-     scale:1
-   
-})
+scross.addEventListener("click",function(){
+  tl.reverse()
 })
